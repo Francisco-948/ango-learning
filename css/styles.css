@@ -1,0 +1,56 @@
+body{
+  overflow-x: hidden;
+}
+
+ul li a{
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+ul li a:hover{
+  background-color: #0a58ca;
+  color: #fff;
+}
+
+.dropdown-menu li a{
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.dropdown-menu li a:hover{
+  background-color: #0a58ca;
+  color: #fff;
+}
+
+.nav2{
+  display: none;
+}
+
+.carousel{
+  margin-top: -2em;
+}
+
+.conteudo{
+  margin-top: 7em;
+}
+
+.error-message {
+  color: red;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Estilos para telas pequenas */
+  .nav1{
+    display: none;
+  }
+  .nav2{
+    display: block;
+  }
+  .carousel{
+    margin-top: 0em;
+  }
+  .conteudo{
+    margin-top: 6em;
+  }
+  
+}

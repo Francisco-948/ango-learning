@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fotos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://vjs.zencdn.net/7.10.2/video-js.css">
+<script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+
+  <title>Centro de Formação Profissional Grupo ATC</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5">Adicionar Imagem</h1>
+
+        <form action="processar_imagem.php" method="POST" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+                <label for="imagem">Escolher Imagem:</label>
+                <input type="file" class="form-control" name="imagem" id="imagem" required>
+            </div>
+
+            <div class="form-group">
+                <label for="titulo">Título da Imagem:</label>
+                <input type="text" class="form-control" name="titulo" id="titulo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição da Imagem:</label>
+                <textarea class="form-control" name="descricao" id="descricao" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

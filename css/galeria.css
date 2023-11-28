@@ -1,0 +1,33 @@
+/* Estilos personalizados para a lista de vídeos relacionados */
+#videoList {
+  list-style: none;
+  padding: 0;
+}
+#videoList li {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+#videoList li:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+#videoList a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+#videoList a:hover {
+  color: #007bff;
+}
+#videoList video {
+  width: 100px;
+  height: 75px;
+}
+#videoDescription {
+  font-size: 14px;
+  color: #666;
+}
